@@ -41,7 +41,6 @@ function login() {
     auth()
   })
   .fail(({responseJSON}, text) => {
-    console.log(responseJSON)
     const { message } = responseJSON
     notification(message)
   })
@@ -111,10 +110,8 @@ function showPlayer() {
 }
 
 function addToTeam(id) {
-  // console.log(id);
   const position = $("#position").val()
   const name = $(`#student-name-${id}`).text()
-  console.log(name, position);
   $.ajax({
     url: `${baseUrl}/players`,
     method: "POST",
@@ -127,7 +124,6 @@ function addToTeam(id) {
     }
   })
   .done(player => {
-    console.log(player);
     $("#players-container").append(`
     <li id="player-${player.id}" class="d-flex flex-row list-group-item justify-content-between align-items-center">
       <div>
@@ -155,7 +151,6 @@ function deletePlayer(id) {
     $(`#player-${id}`).remove()
   })
   .fail((error) => {
-    console.log(error)
     // const { message } = responseJSON
     notification('Access Unauthorized')
   })
