@@ -15,7 +15,7 @@ const authenticate = function (req, res,next) {
 }
 
 const authorize = function (req, res, next) {
-  const userId = req.currentUser.userId
+  const userId = req.currentUser.id
   const playerId = req.params.id
 
   Player.findByPk(playerId)
@@ -27,7 +27,6 @@ const authorize = function (req, res, next) {
     }
   })
   .catch(err => {
-    console.log(err); /////
     res.status(401).json(err)
   })
 }

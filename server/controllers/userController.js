@@ -38,7 +38,6 @@ class UserController {
       res.status(200).json({ access_token })
     })
     .catch(err => {
-      console.log(err);
       res.status(400).json({
         message : 'Invalid Email/Password'
       })

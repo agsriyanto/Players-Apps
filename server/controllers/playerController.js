@@ -12,8 +12,7 @@ class PlayerController {
       res.status(200).json(players)
     })
     .catch(err => {
-      // res.status()
-      console.log(err);
+      res.json(err)
     })
   }
 
@@ -54,14 +53,11 @@ class PlayerController {
     })
     .catch(err => {
       res.status(500).json(err)
-      console.log('errors', err);
     })
   }
 
   static delete(req, res) {
-    // console.log('masuuk');
     const playerId = req.params.id
-    console.log({playerId});
     Player.destroy({
       where: {
         id: playerId

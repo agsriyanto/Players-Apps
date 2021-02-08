@@ -1,0 +1,18 @@
+[
+  {
+    "email": "agus@mail.com",
+    "password": "$2a$10$tgEfSFqKEHL7ljn1aRV.R.5UQJ0xbtQCpa6ECQzM9W2rA9DfmGDcy"
+  },
+  {
+    "email": "rose@mail.com",
+    "password": "$2a$10$q2vjKosEkEVAnysIkPY2.u8TUA7elTzaYR3pa7ssApKXzgX4QgFva"
+  },
+  {
+    "email": "a@mail.com",
+    "password": "$2a$10$cX8HVhLfIhlE5JSuQ.VOVug1ahzA1c15.AFAhw7fPO3wYBhJlLpie"
+  },
+  {
+    "email": "b@mail.com",
+    "password": "$2a$10$.hn6XLRrDabgYGLWOTuNO.WIYXNg5llnwCzkWDKvVd3ysDUTgJhIq"
+  }
+]
